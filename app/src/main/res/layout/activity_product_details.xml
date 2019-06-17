@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".ProductDetails">
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayoutHeader"
+        android:orientation="horizontal">
+
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ImageViewProduct"
+
+
+            android:src="@drawable/hwtrans"
+            android:layout_margin="5dp">
+
+        </ImageView>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewProductTitle"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="26dp"
+            android:text="Dead or Alive"
+            android:textColor="#000000">
+
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewProductDetails"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:text="Product description">
+
+    </TextView>
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="right"
+        android:id="@+id/ButtonAddToCart"
+        android:text="Add to Cart">
+
+    </Button>
+</LinearLayout>
+    <!-- android:adjustViewBounds="true"-->
+    <!--android:scaleType="fitXY"-->

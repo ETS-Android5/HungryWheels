@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/img_foodimag"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_foodname"
+            android:text="Name"
+            android:textStyle="bold|italic"
+            android:textColor="#000"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_category"
+            android:text="Category"
+            android:layout_marginTop="10dp"
+            android:textColor="#FF5722"
+            android:textSize="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Menu"
+            android:id="@+id/btn_add_menu"
+            android:background="@drawable/btn_add_menu"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-40dp"/>
+
+        <!--<View android:layout_centerInParent="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="8dp"-->
+            <!--android:background="@drawable/bg_line">-->
+        <!--</View>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_location"
+            android:text="Location"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"/>
+
+        <!--<View android:layout_centerInParent="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="8dp"-->
+            <!--android:background="@drawable/bg_line">-->
+        <!--</View>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_money"
+                android:text="Money"
+                android:layout_marginTop="5dp"
+                android:textColor="#E4222121"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="per person"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

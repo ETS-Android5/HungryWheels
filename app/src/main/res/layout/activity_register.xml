@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#e2393131"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an account with Email"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="5sp"
+    android:background="#c43215"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/edt_Fname"
+            android:singleLine="true"
+            android:layout_weight="0.5"
+            android:hint="First Name"
+            android:textSize="22dp"
+            android:imeOptions="actionNext"
+            android:padding="10dp"
+            android:textColorHint="#000"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/edt_Lname"
+            android:imeOptions="actionNext"
+            android:layout_weight="0.5"
+            android:singleLine="true"
+            android:hint="Last Name"
+            android:textSize="22dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColorHint="#000"/>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_email"
+        android:hint="E-Mail"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:textSize="22dp"
+        android:layout_marginTop="28dp"
+        android:textColorHint="#000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_number"
+        android:hint="Phone Number"
+        android:singleLine="true"
+        android:layout_marginTop="25dp"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:textSize="22dp"
+        android:textColorHint="#000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_password"
+        android:hint="Password"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:textSize="22dp"
+        android:textColorHint="#000"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/signup_type">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Business owner"
+            android:onClick="checked"
+            android:id="@+id/rdbtn1"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:checked="true"
+            android:onClick="checked"
+            android:id="@+id/rdbtn2"/>
+    </RadioGroup>
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By creating account I accept terms and conditions"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"/>
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:text="Sign up"
+    android:textColor="#d0252525"
+        android:id="@+id/btn_signup"
+    android:textSize="20dp"
+    android:background="@drawable/button_bg"
+    android:layout_gravity="center"
+    android:layout_marginTop="25dp"
+    />
+
+</LinearLayout>
