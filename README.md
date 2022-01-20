@@ -1,3 +1,7 @@
 # HungryWheels
-is an android based application developed using Android Studio and the motive of creating this 
-application was to develop an android based food ordering system.
+
+This is an android based food ordering application
+
+Designed the application in Balsamiq mockups and developed the code.
+ 
+tech stack used in developing this application are Java and Firebase database.
